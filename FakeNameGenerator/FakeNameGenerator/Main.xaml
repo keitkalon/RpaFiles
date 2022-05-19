@@ -1,0 +1,441 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="835,3108" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="64">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="554,3043" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="intCounter" />
+      <Variable x:TypeArguments="x:String" Name="strStringQueryURL" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="512,2951" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4b8915d5-8eef-4771-8255-630c00112722" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,2735" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strCoutryList" />
+              <Variable x:TypeArguments="x:String" Name="strCoutry" />
+              <Variable x:TypeArguments="x:String" Name="strName" />
+              <Variable x:TypeArguments="x:String" Name="strPhone" />
+              <Variable x:TypeArguments="x:String" Name="strEmail" />
+              <Variable x:TypeArguments="x:String" Name="strCountryCode" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetAttribute Attribute="innerhtml" DisplayName="Get Coutry'" sap:VirtualizedContainerService.HintSize="436,206" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" ScopeIdentifier="4b8915d5-8eef-4771-8255-630c00112722" Version="V1">
+              <uix:NGetAttribute.Result>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">strCoutryList</CSharpReference>
+                </OutArgument>
+              </uix:NGetAttribute.Result>
+              <uix:NGetAttribute.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/advanced.php?t=country&amp;n%5B%5D=it&amp;c%5B%5D=us&amp;gen=55&amp;age-min=19&amp;age-max=85" DesignTimeRectangle="947, 341, 255, 96" ElementType="DropDown" FriendlyName="'AustraliaAustriaBelgium…'" FullSelectorArgument="&lt;webctrl id='c' tag='SELECT' innertext='AustraliaAustriaBelgiumBrazilCanadaCyprus (Anglicized)Cyprus (Greek)Czech RepublicDenmarkEstoniaFinlandFranceGermanyGreenlandHungaryIcelandItalyNetherlandsNew ZealandNorwayPolandPortugalSloveniaSouth AfricaSpainSwedenSwitzerlandTunisiaUnited KingdomUnited StatesUruguay' /&gt;" FuzzySelectorArgument="&lt;webctrl id='c' tag='SELECT' innertext='AustraliaAustriaBelgiumBrazilCanadaCyprus (Anglicized)Cyprus (Greek)Czech RepublicDenmarkEstoniaFinlandFranceGermanyGreenlandHungaryIcelandItalyNetherlandsNew ZealandNorwayPolandPortugalSloveniaSouth AfricaSpainSwedenSwitzerlandTunisiaUnited KingdomUnited StatesUruguay' type='' class='' aaname='' /&gt;" Guid="67992941-8728-4fab-91e5-4a7bf8c71cbd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAABkCAYAAACCV1WdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAqpSURBVHhe7Z29bhs7EIX9CH4xI4aB+yBxdWtDnVPe+way3yGAmzROF+DWAdykSJ3O3d6dIYc7JGd/RpJXq93zAQeSSC6XEnQOuQrXuWoAAKAFYQAAYFIY/Pnzp3l7e2t+/vwJQdAGRH4n3wspDKji/f09vprO68NVc/XwGl8BAOaCjHysyPdCCgNKikNAGABwHixze6V9jzAA4EKxzO3VScMAAHAeLHN7hTAAYAVY5vYKYQDACrDM7RXCAIAVYJnbq4sIA/wwCcAwlrm1bm9vzXItdxj8fr5rrq5acyrdPf+OtR8DwgCAYSxziygIRFa9yBUGIQh2TWbL77sPNyrCAIBhLHOTdBCMBYIjDH43T3/1rwJKw3Jw/PXUHhX59dTcqSApVxi777GC4LZdHavsW9V1x742O34dHkN9EV4ArBDL3FYQiKz27jDIDK7IzR/bXt01T7+4IKwgYr0dFLFtDAIdDjpoBo+NYaADAKsKsAUsc3vlCIOWYsauZ3MxIZly1+xaI8pKgkwZnoegyI6NZVRvmbcrGz5WwiCrpxDC6gCsHMvcXvnCICEzf1BlRPkdIa0GlImLQNG6e/5PGbsjhcHgsQgDsF0sc3t1YBh0sFGj2WT2p8dgSDInLeHlsS3KlvUlepbvyMOg71gCYQC2iWVur44Og/BjXjAbP39oLw+U+TgYnlsTp+v8YNjS8EIyvqIrGz5W6hEGYGtY5vbKEQZktNJUwXzJvLKM1z/wsRlzg4cAyWd4KmMTc3tVVxw/eCzCAGwUy9xeuVYGwYitMZXyWdqYuWNAZAYlxORJnWGz87TB8lSuFnqPRRiAbWKZ2ytXGAAAlollbq8QBgCsAMvcXiEMAFgBlrm9QhgAsAIsc3uFMABgBVjm9gphAMAKsMztFcIAgBVgmdurlYeBse/gVIxujQZgPixze+UOg/GNR+Pw9mLZpfihpkIYgG1gmdsrVxiEICh289EOP7070AvCAICjscztlSMM7DsKhfIGIw4OfY8CmycESVcXzJqtMv75t22Xl5HE0OXKJBldzPmdHts61X9oY5xLvRcZ06vqv3yv/B7V8eU9EgCcC8vcXrnDIDO4Ije//L0DZRZaQcT6rO3IDKvb5udo0cfy83J8RRhUx9YhkwKgGFd2aUOMjBuAObHM7ZUjDFrEcFFpVia4Tt8w1PeXjhxhkNWpP5CSUKsVsx8dBiX5SqcKmrG+h8YNwMxY5vbKFwYJmfmDgqGU8eR3hLQayI08LQxCf2LW0K47p9bkMDD6mBQG1p2PCAOwICxze3VgGHSE6+hgFJn96TEYkMxIhpFHKpsWBu5l+VgYsKFVuGiz0yuEAbhgLHN7dXQYsImiUfj56F86KoxnmYrNZxu7M3PBSBhwuGT/6uEIA6tvhAFYEJa5vXKEARmrmB2j2ZLJ2CDFjB5n5P5/aVCzN9Nv+hA8uQGpjI8dCYPS7KGviWEQn3fvIb5GGICFYJnbK9fKQAyklZvWMHIMiM7stfF0v3cPf2f9i9LxEi5JMaBGwqAzcNDd86syez0mad+9l9CXHM+rHYQBWAiWub1yhQEAYJlY5vYKYQDACrDM7RXCAIAVYJnbK4QBACvAMrdXCAMAVoBlbq8QBgCsAMvcXiEMAFgBlrm9QhgAsAIsc3s1OQysDUeZsg07TsztxyXlLkAAgGCZ26sDVwZ6Zx8A4NxY5vbqRGFQbt0ldBt5rrf0qvsciq3E1Sokrgb0zUb1SqW8bwKA7WCZ26tZw0AbNruLUIdBdbtwe2y8BCnDQK9MuO6YSxUALhjL3F7NvDLgioA2vQqD+oahjvo2ZEUVIgBsB8vcXi0uDMJzWkWQcnOXYcCvU9u6PQBbwTK3V8sLg0j2m0AMgC4Mwvky82NlADaMZW6vFhsGCdUuhYHVHmEANoxlbq9OFAZxJk/X+jJz+8Og/GFQ99utDMr+wmuEAdgqlrm9OlkY6AAIG4h0m+lhEMqln9zg2W8GWbu2DVYGYMNY5vbqwDAAACwJy9xeIQwAWAGWub1CGACwAixze4UwAGAFWOb2CmEAwAoQQ3/79s0thAEAKwJhAABgEAYt2d6DhbHksYF1MXsY9N1RyF/6SbcPx41J0SB9/XkYNBxvZio3R6ndimb96UAYgLm4wDDImT8MYhDMZFCEAZiLRYaBtHmlR56B8xuYkkGqbcfdjUfcxihnosGzYyeFQb4qCeTbpGVs+vz2qkJJfx4jY+PPJtXp9xXHwf+Za6znfsst3rE5AAXLDYP2y5sCgA1SGD0axOpP1zPVPQy5Qav2mtQ+mqoauxEGuv/sfofQVgdbNv6RsYXPRd07wX3L5xJDJo1PQsf+3AAoWW4YZG2CEcVElUGytmSCcgbsDGsZYtAkeqY2xq375ldVX6qezFv0occ/PLb8PALVh8+lrM8/M6LvsweAWF8YVJcOnWR21wYhLBMmJAwedmy2ut30MLDO041/ZGw8jnqZz8dznwgDcBzLCoNolLqNNwz6bkM+PAzYZDFo8uMRBmAdnCcMKrOGL64Ypf7SOsJAm9fAMqRVlij6C+PX/U8PA8uMumx4bKXZCf25IAzAccweBvKlzWbAOOPKF7n+0vaHgbUS4PqqLM6q3F7NsPHcU8OACP1LH9PDoO4r1KX3OjK2EETDPyB2fSMMgI8zhAERTZCkDNDiCoNYV/YTjCPlrVR/WV1b/lQZWGGuNOScdD5HGBBicNaueSre69jY8velPzeEATiOM4UBENigfUEEwIwgDGaFZmt9+UKzeb4qAuBcIAxmR18ilT+kAnA+EAYAAEYMfYxGw+DHjx8QBC1UgmVurxAGEHTBEixze4UwgKALlmCZ26uLD4P95+vm+vPerIOgtUuwzO2VKwxevtw0158emxdVRmJDGuW1XprHT515+/rzaDQMvj42N9dtG614Tu/5TzFeCDqlBMvcXs0cBrk+PAxiENzvdfm+ub++b/btc4QBdOkSLHN7dfIwkDZ7eowz8c2Xl7wtmXd/n8/W1zfN41fVxihnWTN9TxgMmrfn/Pm5W8nxB4637E9/FhB0rATL3F59TBjoLz2btzDOwGWCrmexCcNMbs30VXulMJYiTMr66vy6/fhlzdB4q/Y0/p6xQtAhEixz397e9spq/2Erg65NMJSEw3AY0BK+NC+VhQCwjD8UBsnMcVYu2/W9Hy3d5hTjhaBTSrDMTZoaBKRlhUG1FO90v8/7EU01HJ9L+usdK6kIkKH2g+Mt6qvzQNDxEixzi6YEAel0YdBncHcYxEuCSseFQVI0KJm1HmuY1XWZbuMbbyceYwyFcvwQdIwEy9xaY0FA8odB9eWPM+kpwsD89b+TZXx3GKhzTDG3buMdb6n6s4Gg4yRY5vbKFQYyc2azm5pp6XX9he8PA8t8YRYty+J1ObdX1+jx3H1hQH2VRs36L8/P5lb9R7On9+Mcb/5jZGzrCS4IGpFgmdsrZxiQ4lI6Kf/Cu8JAVhVFP9yHPofqL6tryx+HDCZm1jLGFurC+cv++Z9I0zG+8Q69Dwg6hQTL3F4dEAYQBC1FgmVurxAGEHTBEixze4UwgKALlmCZ2yszDN7e3pr393d+bg0AgqBlSLDM7RX5XkhhIBWUFBAErV/kd/K9kMIAALBtEAYAgJam+R8dg80bg/Np5QAAAABJRU5ErkJggg==" InformativeScreenshot="7dc250ecb4260091810d2d3064fcc1cf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="992, 321, 88, 14" ElementType="Text" FriendlyName="'Switch to Region'" FullSelectorArgument="&lt;webctrl parentid='advanced-options' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='advanced-options' tag='A' type='' class='' aaname='Switch to Region' check:innerText='Switch to Region' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAASCAYAAADWvblEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVFhH7ZVNjsIwDIXnAiy5HuI4rHoROAlcgw0LUIWQWHpiOz+2k5QWpDDS5EkVTePYz1/S8gNdTdWBN1YH3lgdeGN9D/j5ALfVFu5nP/4nMsBPMK7WcI3XAiDHAa6bAzzd7WO3htv+ws9rmg38AvfNGsajHy4Q+ki94DXAw8+9o1l9vZAAzrBVYw7iu43+GeC7kx/l428oAScApRNgGsaTLOIi3HDCaT6dqgD+ud+m5xjngY+79LwEVa2LMeyJn9U3LQMs3kKUzK0OiOkh5NAHqeyBa7qDGtaKeqjshJdOgCzEJkMBLOrvRTPamBM1YDaTgJu8xhwrP+EUG3yWcntp4Jwn+lLrsPfQk37TZa2MQ8ED1VR5tffpb7hMSPdoeoC7K8aFMd4nx5gK8GwDUPaTUgVngdtx3lQQN5+uKU9xLPpAlYHXPVDNwM1uspMBLsVJKDh8bvAXk+EvmpLmmgG3gO18UmqeYxIIP+c3Qm3ILOB1D6lmei57nwAui+FCB2c/+MU8xu9vTNYMuB2/OOGxeR1X9ISaBbzuQdfkOFlH/2nGQJQOpkQCEBmRjQqj0iSpBHM28ByOyv9iXdWHXefG1IvxJXNIHzUPuuYUcD+ZvWJeVEDsfMlwnCfTOgcZCbkxbgFwnuO1vMHSq8hhlAF3Yh9cJxwam0c+v7k3uQS85mEB8K6SNOTP1YFnMm+6eUM+VQfeWB14UwH8AqnpDq/mK5lRAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      <uix:Target DesignTimeRectangle="927, 319, 275, 17" ElementType="Text" FriendlyName="'Country Switch to Region'" FullSelectorArgument="&lt;webctrl idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='Country ' check:innerText='Country Switch to Region' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAAVCAYAAABsbKprAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOgSURBVHhe7ZlLTutAEEXfBhiyPYSUZZAFMMrMyiLCjAzfCkDZBQIxIIoiJIZNV3+ruquDzZOTPOceySK2++dI96Ta/DEAADACkAsAYBQgFwDAKEAuAIBRgFwAAKMAuQAARkGVy+vj3MxmM3ncrc1ruH8sNsvTzX0UXh7M9urW7F/COQATopDLq1nfKYHedO7a/PG4ET+NXJ7N7urafKRjQPifFubj5sF82Y+f99dmu3r311v0lsu72d9cm91TOB0ArSM/Cx0L8xnu/YZezwWARcglVyyd2YRribe16ZJcNqZz7fLRpQ5MUMt4MbePgkriWK5ze9ZHrZ5mc7N+y2N1mzhXZ/5qa7drnqd+4dpBvFhEiK0wfhvqs5HL/XM4q88BGAsmF00KClVgcz8vmIFyieMoItArl1psTiipfxZdElTfyseFXftlL8JNFQprl0QSKxd3P1cLUTJfq9t8ndoFuezu83VNIKJfauPX5K+1BVXJhFVXBB9byLB4hjiGlKa+Bj+nlXLsy+YDlwOTSy0ADS3wMsRDK5cebRpyydUSUc6bzw89jyRsiZRfdh4qH8gYJgpY+MyCK0NocWEtxOXkUoyrBrGuXFzbuE5t7ICUix8nrUv0o2ePzyQrOD5X9T0oa3BzinF1aYJpM1Aumjgs4Z2M35KcSi5McqKS6bsligTBxIOHx32mgC7M3gbLh4zahyBRm4ZcKtkQ5baoKYlSLuV5O8A+6Pk4tKZ0zp6D0OXSXoObM35vpdDAxTBwW3TechH3lmFNou9QfGBcMOKWif5ScOgvBZAH8WhyKWVS3s/koPs2OfThXpCOkE8vubTXkOfM16tnB5Nn8AtdLfDnsS3ypD7hiGP9lhwsCokVwWoRguLP6X1JCs7R5FKe/1C5pKDLduqaiF5yaa9BzunbqfOASSPkIioTHuiwxXBBrbYbuU/zRWqqbIbJRVZEkcNy4XMN3hLFqiQhg+FCw2TgQsdDzULJA+nQxNFbLrUIxPg/9Guuo+xnz92zFOviY/B1tNYg54RcLpVCLp5cwbAjSYDIAY+HDDqTFB12i9KsSg7JxSIrEZLFD3LhaxMVTx98EKptQsCFif2ia+FM911A5RgudHFsajdALv6e7+tlxtfKxiio5GLx6/DzREGW4/DrW1uhaXJprQFyAYQql/8a5V/S4N+QQgGgH5OTy8H3RqAnRQVXVD4A9GFictFeJgMATsH0tkUAgLMAcgEAjIAx3wsuuDK6JZoiAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetAttribute.Target>
+            </uix:NGetAttribute>
+            <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="436,291" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="The Country" Title="fakenamegenerator.com">
+              <ui:InputDialog.OptionsString>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">"France; Italy; United States; United Kingdom; Switzerland";</CSharpValue>
+                </InArgument>
+              </ui:InputDialog.OptionsString>
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">strCoutry</CSharpReference>
+                </OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,461" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,383" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InputDialog Label="{x:Null}" Options="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,291" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False">
+                    <ui:InputDialog.OptionsString>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">String.Join(";",System.Text.RegularExpressions.Regex.Split(strCoutryList, @"(?&lt;!^)(?=[A-Z])"));</CSharpValue>
+                      </InArgument>
+                    </ui:InputDialog.OptionsString>
+                    <ui:InputDialog.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">strCoutry</CSharpReference>
+                      </OutArgument>
+                    </ui:InputDialog.Result>
+                  </ui:InputDialog>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <uix:NSelectItem DisplayName="Select Name Origin" sap:VirtualizedContainerService.HintSize="436,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Italian" ScopeIdentifier="4b8915d5-8eef-4771-8255-630c00112722" Version="V1">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="37">
+                  <x:String>American</x:String>
+                  <x:String>Arabic</x:String>
+                  <x:String>Australian</x:String>
+                  <x:String>Brazil</x:String>
+                  <x:String>Chechen (Latin)</x:String>
+                  <x:String>Chinese</x:String>
+                  <x:String>Chinese (Traditional)</x:String>
+                  <x:String>Croatian</x:String>
+                  <x:String>Czech</x:String>
+                  <x:String>Danish</x:String>
+                  <x:String>Dutch</x:String>
+                  <x:String>England/Wales</x:String>
+                  <x:String>Eritrean</x:String>
+                  <x:String>Finnish</x:String>
+                  <x:String>French</x:String>
+                  <x:String>German</x:String>
+                  <x:String>Greenland</x:String>
+                  <x:String>Hispanic</x:String>
+                  <x:String>Hobbit</x:String>
+                  <x:String>Hungarian</x:String>
+                  <x:String>Icelandic</x:String>
+                  <x:String>Igbo</x:String>
+                  <x:String>Italian</x:String>
+                  <x:String>Japanese</x:String>
+                  <x:String>Japanese (Anglicized)</x:String>
+                  <x:String>Klingon</x:String>
+                  <x:String>Ninja</x:String>
+                  <x:String>Norwegian</x:String>
+                  <x:String>Persian</x:String>
+                  <x:String>Polish</x:String>
+                  <x:String>Russian</x:String>
+                  <x:String>Russian (Cyrillic)</x:String>
+                  <x:String>Scottish</x:String>
+                  <x:String>Slovenian</x:String>
+                  <x:String>Swedish</x:String>
+                  <x:String>Thai</x:String>
+                  <x:String>Vietnamese</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/advanced.php?t=country&amp;n%5B%5D=it&amp;c%5B%5D=us&amp;gen=55&amp;age-min=19&amp;age-max=85" DesignTimeRectangle="628, 341, 255, 96" ElementType="DropDown" FriendlyName="'AmericanArabicAustralia…'" FullSelectorArgument="&lt;webctrl tag='SELECT' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;select' innertext='AmericanArabicAustralianBrazilChechen (Latin)ChineseChinese (Traditional)CroatianCzechDanishDutchEngland/WalesEritreanFinnishFrenchGermanGreenlandHispanicHobbitHungarianIcelandicIgboItalianJapaneseJapanese (Anglicized)KlingonNinjaNorwegianPersianPolishRussianRussian (Cyrillic)ScottishSlovenianSwedishThaiVietnamese' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' innertext='AmericanArabicAustralianBrazilChechen (Latin)ChineseChinese (Traditional)CroatianCzechDanishDutchEngland/WalesEritreanFinnishFrenchGermanGreenlandHispanicHobbitHungarianIcelandicIgboItalianJapaneseJapanese (Anglicized)KlingonNinjaNorwegianPersianPolishRussianRussian (Cyrillic)ScottishSlovenianSwedishThaiVietnamese' class='' aaname='' /&gt;" Guid="554122ca-7178-45d8-b8d7-b3f665b10841" InformativeScreenshot="68ec7f8ac71d97843faca31cfcdb151f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="608, 319, 275, 17" ElementType="Text" FriendlyName="'Name set'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='Name set' check:innerText='Name set' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAAVCAYAAABsbKprAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHWSURBVHhe7ZnLscIwDABfr5RB2shQCGmDNqAMPzuRbIXIfKMDM7szOqA4tjhoUcJfAgAIALkAQAjIBQBCQC4AEAJyAYAQkAsAhGDkcknj4ZAOEsP5Kvl85ST545Ra9ve5ngf5vmP+9gCwJ1252IZDLgDwLq5chuPSdKN03EYutykNsrbFkKbbvDxzTdNR8qdxJa15z8tYP28ae3WthN3Xwavl1HZsAtGQ8zbnLKHfGQC+w5fL+bLIQWTiysU0cGtUFYGRi9fMcm/dV/fSNfq5iqMjmM25GVObiqU+4tX1S01MLgBxdOSSm1EasfySP38savcuv/x2cpG2NROGTge1ued92z1temg5+w5IeSwHrcmKaV0ncgGIoy8Xbezc+JMnFzuJmPhYLua6F55c3Bq0xk59GsgFIJYHcrHNJyGN2/I6FewwuTjXX6InmJrvPFJlkAtAHA/lYnO1aT1x7CEX9/z3WMniBVkhF4A4nsjFNmAOmVw272DM9PC5XDKdaaOc5wmi3G/z9y+IfXmU2mT/WlN/ugGAz3gqF5uvErC5Eubv5q/kUjDrbPTkcr+uTVOC++6lyeR+D+8cAHgfIxcAgP1ALgAQAnIBgBCQCwCEgFwAIICU/gFEGR30OVJlbgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Switch to Region'" sap:VirtualizedContainerService.HintSize="436,156" sap2010:WorkflowViewState.IdRef="NSelectItem_2" ScopeIdentifier="4b8915d5-8eef-4771-8255-630c00112722" Version="V1">
+              <uix:NSelectItem.Item>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">strCoutry</CSharpValue>
+                </InArgument>
+              </uix:NSelectItem.Item>
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="31">
+                  <x:String>Australia</x:String>
+                  <x:String>Austria</x:String>
+                  <x:String>Belgium</x:String>
+                  <x:String>Brazil</x:String>
+                  <x:String>Canada</x:String>
+                  <x:String>Cyprus (Anglicized)</x:String>
+                  <x:String>Cyprus (Greek)</x:String>
+                  <x:String>Czech Republic</x:String>
+                  <x:String>Denmark</x:String>
+                  <x:String>Estonia</x:String>
+                  <x:String>Finland</x:String>
+                  <x:String>France</x:String>
+                  <x:String>Germany</x:String>
+                  <x:String>Greenland</x:String>
+                  <x:String>Hungary</x:String>
+                  <x:String>Iceland</x:String>
+                  <x:String>Italy</x:String>
+                  <x:String>Netherlands</x:String>
+                  <x:String>New Zealand</x:String>
+                  <x:String>Norway</x:String>
+                  <x:String>Poland</x:String>
+                  <x:String>Portugal</x:String>
+                  <x:String>Slovenia</x:String>
+                  <x:String>South Africa</x:String>
+                  <x:String>Spain</x:String>
+                  <x:String>Sweden</x:String>
+                  <x:String>Switzerland</x:String>
+                  <x:String>Tunisia</x:String>
+                  <x:String>United Kingdom</x:String>
+                  <x:String>United States</x:String>
+                  <x:String>Uruguay</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/advanced.php?t=country&amp;n%5B%5D=it&amp;c%5B%5D=us&amp;gen=55&amp;age-min=19&amp;age-max=85" DesignTimeRectangle="947, 341, 255, 96" ElementType="DropDown" FriendlyName="'AustraliaAustriaBelgium…'" FullSelectorArgument="&lt;webctrl id='c' tag='SELECT' innertext='AustraliaAustriaBelgiumBrazilCanadaCyprus (Anglicized)Cyprus (Greek)Czech RepublicDenmarkEstoniaFinlandFranceGermanyGreenlandHungaryIcelandItalyNetherlandsNew ZealandNorwayPolandPortugalSloveniaSouth AfricaSpainSwedenSwitzerlandTunisiaUnited KingdomUnited StatesUruguay' /&gt;" FuzzySelectorArgument="&lt;webctrl id='c' tag='SELECT' innertext='AustraliaAustriaBelgiumBrazilCanadaCyprus (Anglicized)Cyprus (Greek)Czech RepublicDenmarkEstoniaFinlandFranceGermanyGreenlandHungaryIcelandItalyNetherlandsNew ZealandNorwayPolandPortugalSloveniaSouth AfricaSpainSwedenSwitzerlandTunisiaUnited KingdomUnited StatesUruguay' type='' class='' aaname='' /&gt;" Guid="81f65c73-8486-4b35-99b7-d4d2c75459d5" InformativeScreenshot="7dc250ecb4260091810d2d3064fcc1cf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="992, 321, 88, 14" ElementType="Text" FriendlyName="'Switch to Region'" FullSelectorArgument="&lt;webctrl parentid='advanced-options' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='advanced-options' tag='A' type='' class='' aaname='Switch to Region' check:innerText='Switch to Region' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAASCAYAAADWvblEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVFhH7ZVNjsIwDIXnAiy5HuI4rHoROAlcgw0LUIWQWHpiOz+2k5QWpDDS5EkVTePYz1/S8gNdTdWBN1YH3lgdeGN9D/j5ALfVFu5nP/4nMsBPMK7WcI3XAiDHAa6bAzzd7WO3htv+ws9rmg38AvfNGsajHy4Q+ki94DXAw8+9o1l9vZAAzrBVYw7iu43+GeC7kx/l428oAScApRNgGsaTLOIi3HDCaT6dqgD+ud+m5xjngY+79LwEVa2LMeyJn9U3LQMs3kKUzK0OiOkh5NAHqeyBa7qDGtaKeqjshJdOgCzEJkMBLOrvRTPamBM1YDaTgJu8xhwrP+EUG3yWcntp4Jwn+lLrsPfQk37TZa2MQ8ED1VR5tffpb7hMSPdoeoC7K8aFMd4nx5gK8GwDUPaTUgVngdtx3lQQN5+uKU9xLPpAlYHXPVDNwM1uspMBLsVJKDh8bvAXk+EvmpLmmgG3gO18UmqeYxIIP+c3Qm3ILOB1D6lmei57nwAui+FCB2c/+MU8xu9vTNYMuB2/OOGxeR1X9ISaBbzuQdfkOFlH/2nGQJQOpkQCEBmRjQqj0iSpBHM28ByOyv9iXdWHXefG1IvxJXNIHzUPuuYUcD+ZvWJeVEDsfMlwnCfTOgcZCbkxbgFwnuO1vMHSq8hhlAF3Yh9cJxwam0c+v7k3uQS85mEB8K6SNOTP1YFnMm+6eUM+VQfeWB14UwH8AqnpDq/mK5lRAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                      <uix:Target DesignTimeRectangle="927, 319, 275, 17" ElementType="Text" FriendlyName="'Country Switch to Region'" FullSelectorArgument="&lt;webctrl idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='Country ' check:innerText='Country Switch to Region' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAAVCAYAAABsbKprAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOgSURBVHhe7ZlLTutAEEXfBhiyPYSUZZAFMMrMyiLCjAzfCkDZBQIxIIoiJIZNV3+ruquDzZOTPOceySK2++dI96Ta/DEAADACkAsAYBQgFwDAKEAuAIBRgFwAAKMAuQAARkGVy+vj3MxmM3ncrc1ruH8sNsvTzX0UXh7M9urW7F/COQATopDLq1nfKYHedO7a/PG4ET+NXJ7N7urafKRjQPifFubj5sF82Y+f99dmu3r311v0lsu72d9cm91TOB0ArSM/Cx0L8xnu/YZezwWARcglVyyd2YRribe16ZJcNqZz7fLRpQ5MUMt4MbePgkriWK5ze9ZHrZ5mc7N+y2N1mzhXZ/5qa7drnqd+4dpBvFhEiK0wfhvqs5HL/XM4q88BGAsmF00KClVgcz8vmIFyieMoItArl1psTiipfxZdElTfyseFXftlL8JNFQprl0QSKxd3P1cLUTJfq9t8ndoFuezu83VNIKJfauPX5K+1BVXJhFVXBB9byLB4hjiGlKa+Bj+nlXLsy+YDlwOTSy0ADS3wMsRDK5cebRpyydUSUc6bzw89jyRsiZRfdh4qH8gYJgpY+MyCK0NocWEtxOXkUoyrBrGuXFzbuE5t7ICUix8nrUv0o2ePzyQrOD5X9T0oa3BzinF1aYJpM1Aumjgs4Z2M35KcSi5McqKS6bsligTBxIOHx32mgC7M3gbLh4zahyBRm4ZcKtkQ5baoKYlSLuV5O8A+6Pk4tKZ0zp6D0OXSXoObM35vpdDAxTBwW3TechH3lmFNou9QfGBcMOKWif5ScOgvBZAH8WhyKWVS3s/koPs2OfThXpCOkE8vubTXkOfM16tnB5Nn8AtdLfDnsS3ypD7hiGP9lhwsCokVwWoRguLP6X1JCs7R5FKe/1C5pKDLduqaiF5yaa9BzunbqfOASSPkIioTHuiwxXBBrbYbuU/zRWqqbIbJRVZEkcNy4XMN3hLFqiQhg+FCw2TgQsdDzULJA+nQxNFbLrUIxPg/9Guuo+xnz92zFOviY/B1tNYg54RcLpVCLp5cwbAjSYDIAY+HDDqTFB12i9KsSg7JxSIrEZLFD3LhaxMVTx98EKptQsCFif2ia+FM911A5RgudHFsajdALv6e7+tlxtfKxiio5GLx6/DzREGW4/DrW1uhaXJprQFyAYQql/8a5V/S4N+QQgGgH5OTy8H3RqAnRQVXVD4A9GFictFeJgMATsH0tkUAgLMAcgEAjIAx3wsuuDK6JZoiAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NGetUrl DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="436,86" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V1">
+              <uix:NGetUrl.CurrentUrl>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">strStringQueryURL</CSharpReference>
+                </OutArgument>
+              </uix:NGetUrl.CurrentUrl>
+            </uix:NGetUrl>
+            <Assign sap:VirtualizedContainerService.HintSize="436,61" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">strStringQueryURL</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">System.Text.RegularExpressions.Regex.Replace(strStringQueryURL, @"gen=\d+","gen=55");</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="436,61" sap2010:WorkflowViewState.IdRef="WriteLine_1">
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4" xml:space="preserve">"Aici ----&gt;  "+strStringQueryURL</CSharpValue>
+              </InArgument>
+            </WriteLine>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DataScraper workflow" sap:VirtualizedContainerService.HintSize="436,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="DataScraper.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="inURL">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">strStringQueryURL</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="outName">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">strName</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="outEmail">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">strEmail</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="outPhone">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">strPhone</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="outCountryCode">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">strCountryCode</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="454,943" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="412,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">
+                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">intCounter</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="412,751" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                    <ui:InterruptibleDoWhile.Body>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,586" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ClickType="Single" DisplayName="Click 'DIV slider'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4b8915d5-8eef-4771-8255-630c00112722" Version="V1">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/advanced.php?t=country&amp;n%5B%5D=it&amp;c%5B%5D=us&amp;gen=55&amp;age-min=19&amp;age-max=85" DesignTimeRectangle="734, 470, 18, 18" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl parentid='slider' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='slider' tag='SPAN' type='' class='ui-slider-handle ui-state-default ui-corner-all' aaname='' /&gt;" Guid="1c9edd49-ce56-4a48-a7f9-a09d965d4d27" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhL7ZQxDkRAFIZdQRQKhUZBpVBI3EChcRhcQe1ajuEa8jbfZkfGZiYZO3ar/ZOv8v6PIV4gX8pvxNu2ybIsMk2TjOPoBLN06Oo5xFwYhkH6vpemaaSuayeYpUNXlx9i7sqAqewCXRwqh5gjXXnSd+jiUAnWdRXgfZkKV8ChfMG+7wJ3iZXvLzaLsyzzwioOw9ALqziKIi+s4jiOvbCKkyTxwipO09SLk1j/pfM8N35tF+jiOH7p1854bqa2baUoio+ga9xuah93XSdVVUlZlk4wS8e6jwkX5nl+DnEsF5ilo0vJSXxfRB42bYY3mWAoBQAAAABJRU5ErkJggg==" InformativeScreenshot="9e860bdcd6db7145019b1c850d87fa8e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target DesignTimeRectangle="628, 474, 255, 12" FriendlyName="'DIV slider'" FullSelectorArgument="&lt;webctrl id='slider' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='slider' tag='DIV' type='' class='ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAAQCAYAAAAS5BpKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVHhe7Zs9zoJAFEW/LRALCwsbCqgsLEjcgQUNiwH34baMG6C1YQFUxLwvp4CgGRMUiplwb3Iq573unsjfnylB5Xq9WlEUlmXZTzDLDkV5j2QQWC6Xi51OJ2fRp8AsOxTlPS8yaNvW6rq2+/1ut9tNeEhVVc6SfwM7XLvFOqDf9Jy+jzPIgB841DSNdV1nz+dTeMhSMnDtFuuAftNz+j4WwiADTMEB17DwB8lALAV9p/d9BhlgCf0j8B/JQCwFfaf3fQYZcC3hGhB+IRmIJaH3fSSDwKDIcRzPQjIQPZJBwFDkKIpmIRmIHskgYCjyZrOZhWQgepwy0A3EMKDI2+12FpKBgI83EPVoMQwo8m63m4VkIODjo0W9dBQGFHm/389CMlg39Jue03fnS0eEHzAFh7iWEP5BkZMkcT4lmAKz7HDtFuuAftPzsQjIiwwU/8MXh+fz2dI0/Qlm9dWi4opkEFgej4eVZWl5ntvxeLTD4TAJzjLDLDsU5TVm/6xcfAkoJT+rAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'DIV slider'" sap:VirtualizedContainerService.HintSize="334,198" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="4b8915d5-8eef-4771-8255-630c00112722" Shortcuts="[d(hk)][k(left)][u(hk)]" Version="V1">
+                          <uix:NKeyboardShortcuts.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/advanced.php?t=country&amp;n%5B%5D=it&amp;c%5B%5D=us&amp;gen=55&amp;age-min=19&amp;age-max=85" DesignTimeRectangle="734, 470, 18, 18" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl parentid='slider' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='slider' tag='SPAN' type='' class='ui-slider-handle ui-state-default ui-corner-all' aaname='' /&gt;" Guid="299180c4-a2ac-4681-b241-9141c56c1933" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhL7ZQxDkRAFIZdQRQKhUZBpVBI3EChcRhcQe1ajuEa8jbfZkfGZiYZO3ar/ZOv8v6PIV4gX8pvxNu2ybIsMk2TjOPoBLN06Oo5xFwYhkH6vpemaaSuayeYpUNXlx9i7sqAqewCXRwqh5gjXXnSd+jiUAnWdRXgfZkKV8ChfMG+7wJ3iZXvLzaLsyzzwioOw9ALqziKIi+s4jiOvbCKkyTxwipO09SLk1j/pfM8N35tF+jiOH7p1854bqa2baUoio+ga9xuah93XSdVVUlZlk4wS8e6jwkX5nl+DnEsF5ilo0vJSXxfRB42bYY3mWAoBQAAAABJRU5ErkJggg==" InformativeScreenshot="c7d64453dfca742be1dd4c5c348059d2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target DesignTimeRectangle="628, 474, 255, 12" FriendlyName="'DIV slider'" FullSelectorArgument="&lt;webctrl id='slider' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='slider' tag='DIV' type='' class='ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAAQCAYAAAAS5BpKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVHhe7Zs9zoJAFEW/LRALCwsbCqgsLEjcgQUNiwH34baMG6C1YQFUxLwvp4CgGRMUiplwb3Iq573unsjfnylB5Xq9WlEUlmXZTzDLDkV5j2QQWC6Xi51OJ2fRp8AsOxTlPS8yaNvW6rq2+/1ut9tNeEhVVc6SfwM7XLvFOqDf9Jy+jzPIgB841DSNdV1nz+dTeMhSMnDtFuuAftNz+j4WwiADTMEB17DwB8lALAV9p/d9BhlgCf0j8B/JQCwFfaf3fQYZcC3hGhB+IRmIJaH3fSSDwKDIcRzPQjIQPZJBwFDkKIpmIRmIHskgYCjyZrOZhWQgepwy0A3EMKDI2+12FpKBgI83EPVoMQwo8m63m4VkIODjo0W9dBQGFHm/389CMlg39Jue03fnS0eEHzAFh7iWEP5BkZMkcT4lmAKz7HDtFuuAftPzsQjIiwwU/8MXh+fz2dI0/Qlm9dWi4opkEFgej4eVZWl5ntvxeLTD4TAJzjLDLDsU5TVm/6xcfAkoJT+rAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                  <uix:Target DesignTimeRectangle="608, 452, 275, 17" ElementType="Text" FriendlyName="'Gender'" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='' aaname='Gender' check:innerText='Gender' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAAVCAYAAABsbKprAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7dndbcIwFEDh7pohQCJboIhBkjWyBYIxbuNgx9c/UJPWkovOJ/kBY3BffGTSLwGACogLgCqIC4AqiAuAKogLgCqaist86aTrlnGa5GbnAPxPmbjcZDrZQ67HZbbv10NcgM8RxmUetpj0ozredj6Yq4C4AJ9DxWWWwYYle0u5TzJkguNHL9Pdvres7d3cqNepNca2Lho6LqX73O3fT5iAJvi4bIc4CkCOW+siFBxy/dqv2W4lyWc6GexUcnN5Zx83iAvQhC0ut7G3B3RY7jCv+GcyLgp6bv3pFEfArIi+P/cTKJzbtw+ANryIS/pgNzzQ+VEWF/Xd6idYEJed+wBoQ8HPIv8sJo6Lv1FE/jgu7+wDoA0FD3SjuCSvM36MiwrJs7js3AdAG1RcFuo/M/5AZw75k1uOicN6yyiIS/od6jbjnsPs2AdAG8K4rNJnLY/hnsVY28EOR3FcgrnH2j6Oi/HmPgDakIkLAPwecQFQBXEBUAVxAVAFcYFcr1c5n89yPB7lcDgUDbPWfMZ8FkiJfAP50n0suh3OGgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NKeyboardShortcuts.Target>
+                        </uix:NKeyboardShortcuts>
+                        <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">intCounter</CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">
+                              <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">intCounter+1</CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </ui:InterruptibleDoWhile.Body>
+                    <ui:InterruptibleDoWhile.Condition>
+                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">intCounter &lt; 5</CSharpValue>
+                    </ui:InterruptibleDoWhile.Condition>
+                  </ui:InterruptibleDoWhile>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="436,600" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="44fa2ab7-0eb9-49b8-89be-9194d5dd4416" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,310" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="44fa2ab7-0eb9-49b8-89be-9194d5dd4416" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="8, 51, 1407, 660" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Horizontal' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' automationid='' /&gt;" Guid="cc824b67-f035-4c15-9d0b-e2eb9bc1665f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABYMAAAKYCAYAAAAhROdVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABWTSURBVHhe7d0xblVXGEbRTMR6QugZeIiQCPMwbkxoYuQ0SMRyZ4nKM6BIR0rSJRVDiEfBjCwmcKOc3EAyhbPXkr7mH8LW0b3fHBxslu32cPn8+bOZmZmZmZmZmZmZTbovMfj29tbMzMzMzMzMzMzMJt2XGAwAAAAAwJzEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgIARg09fni1PjvbrCQAAAACA2YjBAAAAAAABYjAAAAAAQIAYDAAAAAAQIAYDAAAAAASIwQAAAAAAAWIwAAAAAECAGAwAAAAAECAGAwAAAAAEiMEAAAAAAAFiMAAAAABAgBgMAAAAABAgBgMAAAAABIjBAAAAAAABYjAAAAAAQIAYDAAAAAAQIAYDAAAAAASIwQAAAAAAAWIwAAAAAECAGAwAAAAAECAGAwAAAAAEiMEAAAAAAAFiMAAAAABAgBgMAAAAABAwYvDBwWbZbg/XEwAAAAAAsxGDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACRgw+vLdb7j/YrScAAAAAAGYjBgMAAAAABIjBAAAAAAABYjAAAAAAQIAYDAAAAAAQMGLwj2evlv3+2XoCAAAAAGA2IwZ//Phxuby8XE8AAAAAAMzGZyIAAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgYMTg/fHJ8vi779cTAAAAAACzGTH45uZmubq6Wk8AAAAAAMzGZyIAAAAAAALEYAAAAACAADEYAAAAACBADAYAAAAACBgx+PTl2fLkaL+eAAAAAACYjZfBAAAAAAABYjAAAAAAQIAYDAAAAAAQIAYDAAAAAASIwQAAAAAAAWIwAAAAAEDAiMGnL8+WJ0f79QQAAAAAwGy8DAYAAAAACBCDAQAAAAACxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAAJGDP79081yvheDAQAAAABmJQYDAAAAAASIwQAAAAAAAWIwAAAAAEDAiMG//Plp+fkHMRgAAAAAYFYjBh++/WO5vr5eTwAAAAAAzOafGHxvt9x/4GUwAAAAAMCsxGAAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAICAEYMPDjbLdnu4ngAAAAAAmI0YDAAAAAAQIAYDAAAAAASIwQAAAAAAAWIwAAAAAECAGAwAAAAAECAGAwAAAAAEiMEAAAAAAAFiMAAAAABAgBgMAAAAABAwYvBmc2c5Pn6+ngAAAAAAmM2Iwe/f/7pcXFysJwAAAAAAZvMlBj969O16AgAAAABgNiMG37279c1gAAAAAICJ+YEcAAAAAECAGAwAAAAAECAGAwAAAAAEiMEAAAAAAAFiMAAAAABAgBgMAAAAABAwYvBmc0cMBgAAAACY2IjB7969W3a73XoCAAAAAGA2IwZ/+PDb8ubNm/UEAAAAAMBsRgzebu8tp6cv1hMAAAAAALPxAzkAAAAAgAAxGAAAAAAgQAwGAAAAAAgQgwEAAAAAAsRgAAAAAIAAMRgAAAAAIGDE4Ffnr5dnxyfrCQAAAACA2XgZDAAAAAAQIAYDAAAAAASIwQAAAAAAAWIwAAAAAECAGAwAAAAAECAGAwAAAAAEiMEAAAAAAAFiMAAAAABAgBgMAAAAABAgBgMAAAAABIjBAAAAAAABIwY/FYMBAAAAAKY2YvDFi4diMAAAAADAxEYMfvvTsRgMAAAAADCxr98M3j1dTwAAAAAAzOZrDH78fD0BAAAAADCb/3wm4uF6AgAAAABgNl9fBvtmMAAAAADAtMRgAAAAAIAAMRgAAAAAIEAMBgAAAAAIEIMBAAAAAAJGDH51/np5dnyyngAAAAAAmI2XwQAAAAAAAWIwAAAAAECAGAwAAAAAECAGAwAAAAAEiMEAAAAAAAFiMAAAAABAgBgMAAAAABAgBgMAAAAABIjBAAAAAACT+zsE/y8G/3swMzMzMzMzMzMzs9l2u/wFz4XFhQ2L72oAAAAASUVORK5CYII=" InformativeScreenshot="e5ef27c901016421177f4b9c4305efd3.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16" xml:space="preserve">"name:  "+ strName +" \n" + "email:   " +System.Text.RegularExpressions.Regex.Match( strEmail, @"[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?").Value + " \n" + strCoutry + " Code:  " +strCountryCode + " \n" +"Phone:  " + strPhone</CSharpValue>
+                        </InArgument>
+                      </uix:NTypeInto.Text>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="17, 179, 1440, 759" FilePath="C:\\Windows\\System32\\notepad.exe" IconBase64="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" InformativeScreenshot="ef83fcee519f89461334e9ff3cb9cbd0.png" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH3wUcFjkjSdtABwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJZSURBVEhL7ZbNb9JwGMc9LEoLPynQMrPJyfuSGQ1/gHFuNKKXZdH9DR486nT/wLTiX2C8Gu+e1ADjxUWCQBkQylsBx4tTNFmKdr48oxf4tWsLk4ux+ZzK830+pf097e/UPmKmCi74hJgOYlo2em9MIAJBiGMNRwTwcxsxNWq2MOvh3Z6M25M2AZRBMUQgCHHMgQtEwlG+6vsajvRi8V7UNLH4t+1IeYmFuJ6gixjBQuVXb/+U5d9jHr9kOb+2DnFoMtwTFxQs9sxEAojwa+sQNxakV29NV5CZSDDWLdIQNILhxL0H/Mbmrha5jc3S/Yf5hcui1WnwkI8TZLe4VzPkzpmzCS2SFnvWYq9aXS39ZaojKD0OvCcoEWYKMR9VwElobTxoOoLioyfvTqMy6aiTTnEUONMknW0bjd19BbMC4dnz4MKlD4vejIrsRW9x0Vt1e+BtMfk/kA8OpHa73+58V9Pp9MW6sMTWVGMMmBXoH4eSxLM3S6o1Cvw1QYq9UZyqIH1CAZyRJUmTQ6n/40svt+KvECcQCC9evr7Gxlf8Oz6chM/PL18vnL/QtLkmf8i5Le7NjDU1mFiMnIUSCKphc8GgDXdTMCsoc4EkQTXR0XdRE7h29eUDZgUVLpAiKHgfDNeb4b/AkH9PAOO+q7WrqHFPeYKCfdVwvRlwQZVwFK4s778NdkPbnVAY6IbCnyPRyp27RdIB63243gwjApiUPUQX7e4kPR+j5yIDovRcgp7PO841jvlm6TMiAKBFC9HQq3aES6E+2N4q44rVG4ILFJS5x8BqTIGYP0HPVXjjInEIAAAAAElFTkSuQmCC" InformativeScreenshot="574b5ef2ed3a0ec3f2888781bcb59fbc.png" Selector="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" Url="https://www.fakenamegenerator.com/advanced.php?t=country&amp;n%5B%5D=it&amp;c%5B%5D=us&amp;gen=55&amp;age-min=19&amp;age-max=85" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,202 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="welcomeMessage" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="inEventUrl" Type="InArgument(x:String)" />
+    <x:Property Name="outStartDate" Type="OutArgument(x:String)" />
+    <x:Property Name="outEndDate" Type="OutArgument(x:String)" />
+    <x:Property Name="outPrice" Type="OutArgument(x:String)" />
+    <x:Property Name="outEventPlace" Type="OutArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>835,1211</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="welcomeMessage" sap:VirtualizedContainerService.HintSize="476,1146" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Japan Robotics Events | Eventbrite" sap:VirtualizedContainerService.HintSize="434,1054" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="5ec2a162-2e28-41d4-a51c-2dc3a1c87e54" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,838" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Event Start Date" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="5ec2a162-2e28-41d4-a51c-2dc3a1c87e54" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.eventbrite.com/e/2022-4th-blockchain-and-internet-of-things-conference-tickets-296512174897?aff=ebdssbdestsearch" DesignTimeRectangle="1164, 419, 320, 20" ElementType="Text" FriendlyName="'Fri, Jul'" FullSelectorArgument="&lt;webctrl parentid='listing-event-date-time-desktop' tag='P' class='js-date-time-first-line' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='listing-event-date-time-desktop' tag='P' class='js-date-time-first-line' type='' /&gt;" Guid="5da068a4-debb-440a-a108-6b91f104cf9a" InformativeScreenshot="d4d51cdade5b21ade7a0ce195df9eaa3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2022 4th Blockchain and Internet of Things Conference Tickets, Fri, Jul 8, 2022 at 8:00 AM | Eventbrite' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1164, 387, 320, 22" ElementType="Text" FriendlyName="'Date and time'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H3' class='label-primary normal-case l-mar-bot-2' aaname='Date and time' check:innerText='Date and time' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUQAAAAaCAYAAADPGSX1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKpSURBVHhe7drBTfMwGIBhzgzBJIzCmQ2YofeKJbhVYooeemIFTkjMYFz7c2J//hI7bQqteB8ph6aJ6xTlxeH/7xwAICCIACAIIgAIgggAgiACgCCIACDKIH6+u+f7R/dgbM9v33LQKT7c9undfcmra3bY+OvtmOth8+J2n/LC+3p76ToPwPUyg7jdy+uBD9oxjJsPeb1Mb2SuQddc96/+l0QZRAC3rzOI3tx7DQQRwC3oD6JnxsJ4zB7P/3a7p/w94zHTPK8hBGl63LSi3e5lZZs2Y4Ubrim9769t1wiinnP6U4J+ZA7j+s8rxr9/dYf0Xtpnrbr1d3riyhzAMouCGGMQb+rAOD4eUwbKCml1nIzV/FulsTqLgcnmlR7x8+Mkovlc9XlD7GaCGBhzMIOYX08WOb2vuOZqn/xSac0JwNkWBTGGQAVE36jGGHUQY7B0/GKQ8rDVwlh6xVQFyhpfwpLONa+1Mz7dQcyvxRpbzcmrvyuv9XMBsIqzgpgbVleyzQbRCEoQPt/YPyFGJ211EM3YpfhMXIsZJK03iGqcsK+IuQ6i/YsiHVfvB7CmVR6ZiwgaY9hBHM8rt0YQi3Pl2CpQ7SBOrUZ12EwXDmL5fYwbQQQua/k/qmQ3tHXT9wexET6TDog4IYjxnFtZIQL4Df1BrN6LN7O+eePKqxHEqc+ZiNTICp2MvzSI5hzkmD8Lon6d2NcNYF2dQYw3pL5RY4jsR+g8lFYcYjjriM2vjoxghTjFzxzn3RFET88/xfzvgujJd9j6/gCszwxiCky+2aGSG3o47hgJI57ZuHmkhgDJNh/DRMYfNh+0KiJ9QTyKUZTNR6f1/xCj7LplvNWCeKR/DsQQ+BVlEAHgHyOIACAIIgAIgggAgiACgCCIACAIIgAIgggAgXM/ugEH2BYj6WgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">outStartDate</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Event End Date" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="5ec2a162-2e28-41d4-a51c-2dc3a1c87e54" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.eventbrite.com/e/2022-4th-blockchain-and-internet-of-things-conference-tickets-296512174897?aff=ebdssbdestsearch" DesignTimeRectangle="1164, 739, 320, 20" ElementType="Text" FriendlyName="'Sun, Jul'" FullSelectorArgument="&lt;webctrl idx='2' parentid='listing-event-date-time-desktop' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='listing-event-date-time-desktop' tag='P' class='js-date-time-second-line' /&gt;" Guid="959916ef-083b-4a77-9ef3-e22498ae26ad" InformativeScreenshot="bda7145be7b280922d3715b671a2de50.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='2022 4th Blockchain and Internet of Things Conference Tickets, Fri, Jul 8, 2022 at 8:00 AM | Eventbrite' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1164, 687, 320, 22" ElementType="Text" FriendlyName="'Date and time'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H3' class='label-primary normal-case l-mar-bot-2' aaname='Date and time' check:innerText='Date and time' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUQAAAAaCAYAAADPGSX1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARxSURBVHhe7du/a9tYAAfwm/1HGPwHdHKHQjoUTwkcxUMODA6EUEiztB2KKTTmoJchg8EBYzJ4MOSG1BkMPkwxLtTUQwwZNIRkidPBiGKKicHBQxxu+N57T0+xrEiN7dNwyX0/oEFPT/KTQF/eD/kXEBGRwkAkItIYiEREGgORiEhjIBIRaQxEIiKNgUhEpDEQiYg0VyCeIBd6irBzizxH4mUWpWZf13morHvPHendKY0O81iIpFD7rguI6N7yDMT1YhuXg6HY+jg/aqH0bg3RUAyvDrq63vR6BymEV6ro6f3/rrsC0fu4FYivUfmmC4jo3vIOxIPbvUFzXwRbKIXKjD2hhx6IRPRwTB2IuGphy33swkDhZRILolwOrxeebWLPGOqDgLHtGHqrzRmofRg7m4g/so5FH29g66CDkT7qZXRWxdbyc9FblefEEFvOotbRBxXd/sJn7NntEkP+V7vtW9c1/8pi9XHs5jqNjuEfeN+rWFe/6di2T6xjR3mx77wvqw2JN3mk44tWXdGG1fdfcW6Ukbbb/0jc7yd3j3v2Z0JEwZk+ENFFJeEIArFfij/FknjRzcE1RldDmPUs4qFN1C50leEQ58XXCCfKOFdD8KF+ua9xmkkiulzAYccq7x1XkX4ihuVln7nKKwOZiAy7Nnry94Z9nBZTiD7Zw6muYrc/HNlArt4R9USd/Q9YEqGXaV7rOiJYv2RFKC0itXsi2i7afSSCaiUp2u7XA7wWbWwhI45n6lZ7L+3c9wlE1YZmV9TtovF7UgfjuOxwe8N13hzPhIgCNUMg9lFZES/1+5YONfGi7xTQmJg7s87f+jIOH88h8+Ar0qE1lFzzbqruRMA5DE5Q2inDGOh9SfXcnNexfj9RdHYbrSBfyrX1/hCNN+I+3tr3oR3vieCcY8js10N0tkH3rr3Kbp7VPM+EiAL1L3qIwKUcAoqelT1ktjfn+Z6BqEJk8pzxloehq7mZ9TxSi/aQebyNQ8q7/cYfot5Nu33uUQdUUIE4ef0pyuZ8JkQUnPnnEL+VsSpXnvc7GP1tFXmd7x+IzhC526gph7lJMeTsj3t2em7vzkCUc5n3IhBneyZEFKypA/HWKrPXC3zxGSnX+SoQfy3D1PuKGh5OzutJZnHNd3ioruPuKd0a5nq3fzIQ+6i9EPtzDpmd0wFKUIE4xzMhomB5B+I03yGqHqKoqxY5RN0fbVTeWosHEy/+oQwMq2cnr3d5JQutBYTwsyxqZ7J8CLNZwGrEfwHB6iH+plZmVdvkqvCyXCWeNRDtRZUk0n9aiypq8WIxpobi/oFoTRlEX1TVAlHvQgdXUIE4xzMhomB5BuLE/NVP/qlifrI/XbE/EfkoejnuF7+LhgpUea1N1H7oYvmJye4Hx/kp5Oo/+/BbBMbu+JMU+YlPYb8wx5DZMv7sRlwrnkXlrKXO9Q9EEaTHH7Fu//6Ovl5ggSjN+kyIKEiuQCQi+v9iIBIRaQxEIiKNgUhEpDEQiYg0BiIRkcZAJCJSgH8A8GdKl135xtYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">outEndDate</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Event Price" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="5ec2a162-2e28-41d4-a51c-2dc3a1c87e54" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.eventbrite.com/e/3rd-edition-of-international-conference-on-dermatology-and-cosmetology-id-tickets-219020675737?aff=ebdssbdestsearch" DesignTimeRectangle="1170, 531, 61, 20" ElementType="Text" FriendlyName="'$784.56'" FullSelectorArgument="&lt;webctrl parentid='event-page' tag='DIV' class='js-display-price' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='event-page' tag='DIV' class='js-display-price' type='' /&gt;" Guid="77e6af23-01ad-42ce-af4b-a44d15d7c0ae" InformativeScreenshot="7d5dc5c94f1da693371fcd1bb480b40d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='3rd Edition of International Conference on Dermatology and Cosmetology&amp;quot; (ID Tickets, Wed, May 18, 2022 at 7:00 PM | Eventbrite' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="487, 592, 24, 24" ElementType="Icon" FriendlyName="'SVG heart-chunky_svg__e…'" FullSelectorArgument="&lt;webctrl id='heart-chunky_svg__eds-icon--user-chunky_svg' parentid='listings-root__bookmark-desktop' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl id='heart-chunky_svg__eds-icon--user-chunky_svg' parentid='listings-root__bookmark-desktop' tag='svg' type='' class='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAERSURBVEhL7ZGxDgFBEED9n2jRci1KopOgUSChIaFDrab0GxoV0VKvvM0tm2XO3bqo7iWT3M3OzNuby6k/kwlTJxOmTqTwdrur0XipqkFLB8/kDPZ5vhCobn+qzpdrePoZUciwYrmuB9lB7ng86ZDO7Uu5iMLhaKEHtNoDfWui25s8hxpZrdF5nlNLjl4JUcggmt0VmYsYmf011JJnxRKisBI0dbO7Ht4RuTLgnZ5iqRZm3hGFZn2r9TbMvGCwK4PZfKN76JUQhWY9xG5/CLMy1Jh69zfYiEKwh0RJ49ZBpBC+DUsig69CkIYmlUEsIbjDfWQQWwi2xEcGiYTg+2WGxEJA5CMDL+EvZMLUyYQpo9QDUmaO6gzSgPMAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">outPrice</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Event Place" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="5ec2a162-2e28-41d4-a51c-2dc3a1c87e54" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.eventbrite.com/e/3rd-edition-of-international-conference-on-dermatology-and-cosmetology-id-tickets-219020675737?aff=ebdssbdestsearch" DesignTimeRectangle="1164, 842, 320, 20" ElementType="Text" FriendlyName="'ANA Crowne Plaza Narita'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' isleaf='1' parentid='event-page' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='event-page' tag='P' class='' /&gt;" Guid="0ddb7787-a484-45fe-b9d4-4bc351509f81" InformativeScreenshot="b596e135b5b533cc57aa20b05f87a190.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='3rd Edition of International Conference on Dermatology and Cosmetology&amp;quot; (ID Tickets, Wed, May 18, 2022 at 7:00 PM | Eventbrite' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1164, 809, 320, 22" ElementType="Text" FriendlyName="'Location'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3' idx='2' parentid='event-page' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='label-primary l-mar-bot-2' parentid='event-page' tag='H3' aaname='Location' check:innerText='Location' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUQAAAAaCAYAAADPGSX1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM8SURBVHhe7dq/SxthHMfxzv4RBf8Ap3Qo1EEyKRTJEEFQSEUILtKhZKlSsA4tBCIcwSFDIYs/hkBKkJBApQ4KDjdI0iGmQxAJEgxEMphMnz53z/dy8UyqKSko+bzghufyJPdMb+65ywsQEZGNQSQiEgwiEZFgEImIBINIRCQYRCIiwSASEQkGkYhIeIJYgDE2ifB+XcZP0K2J6IQfq6knvEYiepaecBD1WoxTGTokiOGdqpwgIhqO5xdEIqL/ZOAgtkp5GO9m4VPzXo7PIvQ+hWJDPnQ0K0h/XIF/XM0Z88MfjCH9qykfaq1SBptB+R2Zk63Ih5cZhO3zXceXgnzYa411mNsbCE3ouW+m1mDk7t5B1vYj6rM40gcxhF759bxADIfONYlo5A0WxMs8Vsf9CEVPUL5q4qZSQHJZxWUqiaJMseKUVed803FkS3XcXFWQ/bSgArSCvd8yxdr2qliGE+eoNdpoNesofovA99r5nTZuGieIqrVEc+o6DXV0eupdYxvFqPr9qa/YO62quXWUv8cQUJFdP3AjrIM4icCHFMyKtXYTRkAFNJDChcwhotE2UBCLxhxevt1FWca26zwi6jubP9p6fJbEzNgSkiU91NTvWgF0nvs1CtjbUmHqvrO07wqX3GjKWu5vmT1rbPzEuhqv5+T6orhlrdWNnQ5iDMe3csJyHFfnNnDovcMlopE0QBDrSC92b10dVaTnJzFjnNsjZ2tq2qP+LnJxRKadLbN7uAF8ZBBPrahFkL7Uww5P7Hquq2JFuMd3iWgkDS2Ivqg+/5ggto5iKoQLMI7qaMk557nhcIMYQfZKD3uuy74mg0hE2tC2zJ3ndT23zKb9PNDZMveMk/29+0HsbMU7PGv825a580ySQSSih/UM4vznPI6PTPcwq/pOru9LlQSKnWdz8lIlmMDhnZcqbnj0HeIcNg+slyDygiOo3/y6QZQ7z+UMympO7doJnjfa/V+qdP95m0Ekoof0DGL3Mz37WMygJjP++W83pe47OBWx7TUEuv4mk9hJeLbM6lpnuwg7c7aG87cbBpGI+vEEkYhodDGIRESCQSQiEgwiEZFgEImIBINIRCQYRCIiG/AHGRVwdsBTdz8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">outEventPlace</CSharpReference>
+                </OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGKSURBVDhPhVM9SwNBEF3xAwt7WxFFMSCI5mZPEE4stLLZnTOCYLCwELURLO38E1Z2NoKCVhKwsBBEEAv/gIVgwNztRQg2WWcva3K5XMyDx8G8925vZudYNyh0JwLhzkXSXQxFftyW/4f2vAEloRAifwoRdJIK4SHwnW3NWJ+1t0MXvWEy3qeDaSrJzzViv401oHfnBwOE26xAF17aaAPK54cpQxhIOIpwYUptAKdTD6hWS3qU76zaOGNUeE2In9+bMGqlJgLk66T9tHy8FAsVAbOtIlE6x6ZHcwMKnf3Qhwuqv7d5LIMCH2OBD8sp4ZFYTdWyWDPtsQgdN0PMoFOm55WZjRIcNOaG4haqCDOdZqjTrbyFEs6o96ISMBmbu4ECL4mwMv1bqYkvkc/RMl0TT0KZXymjN2Ilc42wlXiBptM/aDY7Zp3NF8bDRKgkPHXS1my8sUhU7LmFTUp+aqMtmFWmfm8yAwmaNjpW+Q/2Z9oj43M6SLyrSGfJWnsjEu60uWIz0HhhMsHYL/brknLbVK1aAAAAAElFTkSuQmCC" InformativeScreenshot="28632b72aab21eb4f383547d6579b973.png" Selector="&lt;html app='chrome.exe' title='Japan Robotics Events | Eventbrite' /&gt;">
+          <uix:TargetApp.Url>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">inEventUrl</CSharpValue>
+            </InArgument>
+          </uix:TargetApp.Url>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
